@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="header">
+        <img class="header a.logo" src="/img/logo.png" style="width: 15%;">
+        <div class="header-right">
+            <nav>
+            <a href="#yo">Yo</a>
+            <a href="#fortalezas">Fortalezas</a>
+            <a href="#metas">Metas</a>
+            </nav>
+        </div>
+    </div>
+    <section class="container">
+        <div class="fondo">
+            <img src="img/fondo.png" style="width: 100%;">
+        </div>
+        
+    </section>
+
+    <button onclick="topFunction()" id="boton" title="Go to top">
+        <img src="img/scrolltop.png" alt="boton flecha">
+    </button>
+    
+    <section class="container-info">
+        <div id="yo">
+        <div class="arriba">
+        <div class="cols-info">
+            <img class="avatar" src="img/avatar.png">
+        </div>   
+        <div class="cols-info">
+            <h1>
+                Isaac Solano
+            </h1>
+            <p>
+                Soy alumno de desarrollo y diseño web en Cenfotec, me gusta todo lo que involucra el proceso
+                de diseñar un sitio web y trabajar en el front end de un proyecto.
+                Desde joven me ha llamado la atencion el los temas relacionados al diseño grafico, web y cualquier tema que involucre 
+                hacer algo visual que vaya destinado al publico.
+                Uso mi tiempo libre para jugar videojuegos, hacer ejercicio, crear contenido en linea, etc.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <section class="container-fuertes">
+        <div id="fortalezas">
+        <div class="fuertes">
+            <h1>Mis fortalezas</h1>
+        </div>
+
+        <div class="fuertes-columns-prueba">
+        <div class="cols-info-child">
+            <img class="img" src="img/laptop.png">
+            <p>
+                He estudiado desarrollo y diseño web por 2 años,
+                aprendiendo UX y UI en mi tiempo en la carrera me ha
+                enseñado lo necesario para trabajar en proyectos grupales en front end.
+            </p>
+        </div>
+       
+
+        <div class="cols-info-child">
+            <img class="img" src="img/cerebro.png">
+            <p>
+                Ante un problema o bloqueo mental, tomo un descanso y analizo que puedo hacer para solucionar el impedimento al momento
+                de trabajar en un proyecto.
+            </p>
+        </div>
+
+        <div class="cols-info-child">
+            <img class="img" src="img/bombillo.png">
+            <p>
+                Mi imaginacion y atencion al detalle me ayudan a
+                tener siempre al menos una idea de lo que quiero
+                hacer para un sitio web.
+            </p>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="container-metas">
+        <div id="metas">
+        <div class="container-metas-header">
+            <h1>
+            Metas personales
+            </h1>
+        </div>
+
+            <div class="metas-content">
+                <div class="metas-content-child">
+                <img class="imagenes" src="img/boina.png">
+                <p class="metas-texto">Estar lo mejor preparado para mi primer trabajo profesional cuando termine mis estudios y ser capas de trabajar en
+                conjunto con un equipo en proyectos.</p>
+            </div>
+                <div class="metas-content-child">
+                <img class="imagenes" src="img/desk.png">
+                <p class="metas-texto">Trabajar en una empresa grande y tener estabilidad
+                economica y mental, desarrollar proyectos con un equipo.</p>
+            </div>
+                <div class="metas-content-child">
+                <img class="imagenes" src="img/relacion.png">
+                <p class="metas-texto">Conocer a otros diseñadores, desarrolladores, programadores y otros expertos de este ambito, aprender de ellos y poder
+                pedir ayuda si se da el caso.</p>
+            </div>
+                <div class="metas-content-child">
+                <img class="imagenes" src="img/javascript.png">
+                <p class="metas-texto">Aprender Javascript y otros lenguajes o herramientasrelacionadas para mejorar mis habilidades y hacer de los websites
+                desarrollados por mi mas profesionales yagradables para el usuario.</p>
+            </div>
+            </div>
+            </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sigueme</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let mybutton = document.getElementById("boton");
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0; 
+                document.documentElement.scrollTop = 0; 
+            }
+    </script>
+
+</body>
+</html>
